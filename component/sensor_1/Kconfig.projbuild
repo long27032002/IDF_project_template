@@ -1,0 +1,26 @@
+menu "Sample configuration"
+    config PIN_NUM_SCL_GPIO
+        int "SCL GPIO Number"
+        default 27
+        help
+            GPIO number for I2C Master clock line.
+
+    config PIN_NUM_SDA_GPIO
+        int "SDA GPIO Number"
+        default 26
+        help
+            GPIO number for I2C Master data line.
+
+    config I2C_PORT
+        int "I2C Port"
+        default 1
+        help 
+            I2C port for BME280 sensor.
+
+    config I2C_FREQ_HZ
+        int "Frequency I2C"
+        default 400000
+        help
+            I2C frequency.
+
+endmenu
